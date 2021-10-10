@@ -75,7 +75,8 @@ def medie_inferioara_unei_valori(l,valoare):
     :param l: lista de nr. intregi
     :return: True sau False
     '''
-    if(sum(l)/len(l) < valoare == True):
+    average = sum(l)/len(l)
+    if average < valoare:
         return True
     else:
         return False
