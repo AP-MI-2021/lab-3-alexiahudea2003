@@ -69,8 +69,6 @@ def test_get_longest_all_not_prime():
     assert get_longest_all_not_prime([3,6,7]) == [6]
     assert get_longest_all_not_prime([6,8,10,7]) == [6,8,10]
 
-valoare=int(input("Introduceti valoarea:"))
-
 def medie_inferioara_unei_valori(l,valoare):
     '''
     determina daca media aritmetica a elementelor unei liste este mai mica decat o valoare data
@@ -120,6 +118,7 @@ def main():
         elif optiune == "2":
             print(get_longest_all_not_prime(l))
         elif optiune == "3":
+            valoare = int(input("Introduceti valoarea:"))
             print(get_longest_average_below(l,valoare))
         elif optiune == "4":
             break
